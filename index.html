@@ -1,0 +1,269 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Kings Technical Solutions</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="ima.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+  
+    <script src="jquery.min.js"></script>
+     <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="js/custom.js"></script>
+
+      <link href="carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <script>
+    
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var singles = header.getElementsByClassName("single");
+for (var i = 0; i < singles.length; i++) {
+  singles[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+    </script>
+    <nav id="nav" class="navbar navbar-default">
+      <div class="container">
+      <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand" href="">Kings Technologies Limited</a>
+        </div>
+         <div id="navbar" class="navbar-collapse collapse">
+          <div id="myDIV">
+      <ul class= "nav navbar-nav navbar-right">
+      <li id="home" class="single active" href="home">Home</li>
+      <li id="service" class="single" href="services">Services</li>
+      <li id="about" class="single" href="about">About us</li>
+      <li id="contact" class="single" href="contact">Contact</li>
+
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    </nav>
+
+    <div id="myDIV">
+  <button class="single">1</button>
+  <button class="single active">2</button>
+  <button class="single">3</button>
+  <button class="single">4</button>
+  <button class="single">5</button>
+</div>
+
+    <div id="content">
+     
+   <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="image/slider3.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="image/displaypic4.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+      
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="image/slider4.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+    <h2 id="se"><a name="services"></a>Services</h2><br />
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row zoomin">
+        <div class="col-lg-4">
+          <img class="" id="1" src="image/repairs.jpg" alt="Generic placeholder image" width="230" height="230">
+          <h2>Mother Board Repairs and Replacement</h2>
+          <p>We work on system board check for faulty component and also replace motherboard newly imported.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="" src="image/screen.jpg" alt="Generic placeholder image" width="230" height="230">
+          <h2>Screen Replacement</h2>
+          <p>We Replace any kind of system screen for you with 100% Gurrantee!</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="" src="image/network.png" alt="Generic placeholder image" width="230" height="230">
+          <h2>Network Installations</h2>
+          <p>We carry out network Installations for your home, offices and schools.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    
+
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Web Development and Maintenance</h2>
+          <p class="lead">We Create and Develop Full blown professional responsive websites, we develop websites for Schools, organiations and for bussineses as well with
+            the latest technologies.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="image/web.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Data Recovery</h2>
+          <p class="lead">We offer full data recovery from your death or crash HDD, our Data Recovery is rated 95.9% successfull. </p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="image/Hdd.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+     
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Training Classes</h2>
+          <p class="lead">We Run training programmes such as software trainings includes- Desktop publishing and Graphics designs
+            Hardware trainings include repairs, parts replacements amongs others.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="image/classes.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+ 
+
+
+
+      <!-- /END THE FEATURETTES -->
+
+      <h2 id="ab">About us</h2><br />
+
+        <!-- Background video -->
+<div class="video-background-holder">
+  <div class="video-background-overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="video/videos.webm" type="video/mp4">
+    </video>
+  <div class="video-background-content container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-2" id="kings">Kings Technologies</h1>
+        <h3 class="display-4" id="kings"> </h3>
+      <h3> <p class="lead mb-0" id="kings">Kings Technologies is a company of season ICT professionals and consultants 
+Composed of industry<br /> practitioners and IT certified engineers experience in rendering business <br /> consulting services in all major industries in Africa.
+</p></h3>
+      <h2> <p class="lead mb-0" id="kings">Kings technologies pioneered as a major provider (sales and installation) of Network facilities,<br /> computer accessories, Desktops and Laptops, Repair services, Web Development <br />Maintenance and trainings.</p></h3>
+        <h3><p class="lead" id="kings">Our Corporate Office is located in Ikoyi Lagos, to further serve our ever growing customers.
+        </p></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End --><br />
+<div id="about-secsion">
+       <div class="container marketing">
+      <!-- two columns of text below the backgroud video -->
+      <div class="">
+        <div class="col-lg-12" align="center">
+          <img class="img-circle" id="1" src="image/CEO.png" alt="Generic placeholder image" width="230" height="230">
+          <h3>Muhammed Dungus</h3>
+          <p>CEO/ENGINEER</p>
+          <p>He holds a B.Sc in Computer Science, Ahmadu below university Zaria Kaduna state.
+He is a certified CISCO Associate.
+He has National Diploma in Computer Engineering and Management in Bauchi State.
+He has Worked as System engineer and ICT consultant in  Various Organizations.
+</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+      <!-- FOOTER -->
+  <footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
+</footer>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+     </div>
+  </body>
+</html>

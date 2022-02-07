@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html>
+<head>
+<script>
+/*Navbar active script*/
+ $(document).ready(function(){
+        $(".navbar li").removeClass("active");
+        $('#contact').addClass('active');
+      });
+/*calling the footer page with jquery*/
+ $(function(){
+        $("#footer").load("footer.html");
+      });
+</script>
+</head>
+ <div class="container marketing">
+  <h2 id="cont"><a name="contact"></a>Contact us</h2><br />
+
+
+
+
+     <div id="footer"></div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+     </div>
+  
+  </body>
+</html>
